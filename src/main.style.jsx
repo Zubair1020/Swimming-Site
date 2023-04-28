@@ -28,7 +28,6 @@ a {
 
 
 body{
-    background-color: #A6D0DD;
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
 }
