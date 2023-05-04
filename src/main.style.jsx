@@ -29,7 +29,7 @@ a {
 
 body{
     font-family: 'Montserrat', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 `;
 

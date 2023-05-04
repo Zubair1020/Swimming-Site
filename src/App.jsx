@@ -1,10 +1,12 @@
-import Navigation from "./components/navigation/navigation.component";
+import Course from "./components/course/course.component";
+import Header from "./components/header/header.component";
 import GlobalStyle from "./main.style";
 const App = () => {
   return (
     <>
       <GlobalStyle />
-      <Navigation />
+      <Header />
+      <Course />
     </>
   );
 };
