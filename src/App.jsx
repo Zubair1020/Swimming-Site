@@ -3,6 +3,8 @@ import Header from "./components/header/header.component";
 import Spotlight from "./components/spotlight/spotlight.component";
 import GlobalStyle from "./main.style";
 import Img1 from "./assets/spotlight/img1.svg";
+import Img2 from "./assets/spotlight/img2.svg";
+import Bgi2 from "./assets/spotlight/spotlightBg2.svg";
 import Statistics from "./components/statistics/statistics.component";
 const App = () => {
   return (
@@ -10,11 +12,13 @@ const App = () => {
       <GlobalStyle />
       <Header />
       <Course />
-      <Spotlight
-        mainImg={Img1}
-        // flexDirection="rowReverse"
-      />
+      <Spotlight mainImg={Img1} />
       <Statistics />
+      <Spotlight
+        bgi2={Bgi2}
+        mainImg={Img2}
+        flexDirection="rowReverse"
+      />
     </>
   );
 };

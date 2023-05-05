@@ -8,12 +8,12 @@ import {
 import FloatImage from "../../assets/spotlight/spotlightShape.svg";
 import Bgi from "../../assets/spotlight/spotlightBg.svg";
 
-const Spotlight = ({ mainImg, flexDirection }) => {
+const Spotlight = ({ bgi2, mainImg, flexDirection }) => {
   return (
     <>
       <SpotlightCont
         flexDirection={flexDirection}
-        bgi={Bgi}
+        bgi={bgi2 ? bgi2 : Bgi}
       >
         <ImgCont>
           <FloatImg src={FloatImage} />
