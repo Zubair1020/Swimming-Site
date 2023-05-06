@@ -6,6 +6,8 @@ import Img1 from "./assets/spotlight/img1.svg";
 import Img2 from "./assets/spotlight/img2.svg";
 import Bgi2 from "./assets/spotlight/spotlightBg2.svg";
 import Statistics from "./components/statistics/statistics.component";
+import Information from "./components/information/information.component";
+import NewsLatter from "./components/news-latter/news-latter.component";
 const App = () => {
   return (
     <>
@@ -19,6 +21,8 @@ const App = () => {
         mainImg={Img2}
         flexDirection="rowReverse"
       />
+      <Information />
+      <NewsLatter />
     </>
   );
 };

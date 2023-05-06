@@ -15,7 +15,7 @@ export const CourseTextCont = styled.div`
     margin-bottom: clamp(0.8rem, 3vw, 1.5rem);
   }
   p {
-    font-size: clamp(1.07rem, 4vw - 0.5rem, 1.563rem);
+    font-size: clamp(1rem, 4vw - 0.5rem, 1.563rem);
     text-align: center;
     margin: auto;
     max-width: 48.875rem;
@@ -49,8 +49,7 @@ export const CardTextCont = styled.div`
     margin-bottom: 0.5rem;
   }
   p {
-    font-size: 14px;
-    width: max(350px);
-    height: max(90px);
+    font-size: 0.875rem;
+    max-width: 21.875rem;
   }
 `;
