@@ -8,6 +8,7 @@ import Bgi2 from "./assets/spotlight/spotlightBg2.svg";
 import Statistics from "./components/statistics/statistics.component";
 import Information from "./components/information/information.component";
 import NewsLatter from "./components/news-latter/news-latter.component";
+import Footer from "./components/footer/footer.component";
 const App = () => {
   return (
     <>
@@ -19,10 +20,11 @@ const App = () => {
       <Spotlight
         bgi2={Bgi2}
         mainImg={Img2}
-        flexDirection="rowReverse"
+        flexDirection="reverse"
       />
       <Information />
       <NewsLatter />
+      <Footer />
     </>
   );
 };

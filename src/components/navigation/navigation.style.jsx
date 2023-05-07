@@ -5,15 +5,24 @@ export const NavLogo = styled.img`
 `;
 
 export const NavigationCont = styled.div`
+  position: fixed;
+  inset: 0 0 auto 0;
+  background-image: linear-gradient(90deg, rgb(136 252 255), rgb(77, 128, 228));
+  background-repeat: no-repeat;
+  background-size: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: clamp(0.5rem, 4vw, 2rem) clamp(2rem, 4vw + 1rem, 5rem);
+  transition: background-size 400ms ease-in;
+
+  ${({ isScrolling }) => isScrolling && `background-size: 100%`};
 `;
 
 export const MenuButton = styled.button`
   position: absolute;
-  inset: 2rem clamp(1.5rem, 6vw, 5rem) auto auto;
   z-index: 9999;
+  inset: 2rem clamp(1.5rem, 6vw, 5rem) auto auto;
   background-image: url(${({ bgi }) => bgi});
   background-size: 100%;
   background-color: transparent;

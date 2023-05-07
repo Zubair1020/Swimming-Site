@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const NewsLatterCont = styled.section`
+  position: relative;
+  z-index: -1;
   background-image: url(${({ bgi }) => bgi});
   background-size: cover;
   background-repeat: no-repeat;
@@ -42,12 +44,12 @@ export const NewsLatterFrom = styled.form`
   }
 
   button {
+    position: relative;
     background-color: #4d80e4;
     border-radius: 32px;
     color: #fff;
     font-weight: 700;
     padding: clamp(0.5rem, 2vw, 1.5rem) clamp(0.5rem, 4vw, 2rem);
-    position: relative;
     right: 2rem;
     margin-right: auto;
     text-transform: uppercase;

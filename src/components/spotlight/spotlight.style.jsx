@@ -10,6 +10,8 @@ export const SpotlightCont = styled.div`
   align-items: center;
   justify-content: center;
   padding: clamp(2rem, 8vw, 8rem) 2rem;
+  position: relative;
+  z-index: -1;
 
   @media (max-width: 900px) {
     flex-direction: column;
@@ -39,8 +41,9 @@ export const TextCont = styled.div`
 `;
 
 export const FloatImg = styled.img`
-  display: none;
   position: absolute;
+  z-index: 100;
+  display: none;
   top: 5rem;
   ${({ flexDirection }) =>
     !flexDirection ? "left: -1.5rem;" : "right: -1.5rem;"}

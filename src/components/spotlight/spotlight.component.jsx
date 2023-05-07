@@ -16,7 +16,10 @@ const Spotlight = ({ bgi2, mainImg, flexDirection }) => {
         bgi={bgi2 ? bgi2 : Bgi}
       >
         <ImgCont>
-          <FloatImg src={FloatImage} />
+          <FloatImg
+            src={FloatImage}
+            flexDirection={flexDirection}
+          />
           <MainImg src={mainImg} />
         </ImgCont>
         <TextCont>
