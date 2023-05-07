@@ -6,7 +6,10 @@ import { HeaderCont, HeroTitleCont } from "./header.style";
 const Header = () => {
   return (
     <>
-      <HeaderCont heroBgi={HeroBg}>
+      <HeaderCont
+        heroBgi={HeroBg}
+        loading="lazy"
+      >
         <Navigation />
         <HeroTitleCont>
           <h1>Open New Class, Register Now!</h1>

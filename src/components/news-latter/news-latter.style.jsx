@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const NewsLatterCont = styled.section`
   position: relative;
   z-index: -1;
+  background-color: rgb(136 252 255);
   background-image: url(${({ bgi }) => bgi});
   background-size: cover;
   background-repeat: no-repeat;

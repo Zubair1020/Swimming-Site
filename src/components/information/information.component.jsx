@@ -2,7 +2,10 @@ import { InformationCont } from "./information.style";
 import Bgi from "../../assets/information/informationBg.svg";
 
 const Information = () => (
-  <InformationCont bgi={Bgi}>
+  <InformationCont
+    bgi={Bgi}
+    loading="lazy"
+  >
     <h2>
       Morbi auctor lacinia mi nec suscipit. Vivamus eget dui dignissim,
       fermentum leo nec.

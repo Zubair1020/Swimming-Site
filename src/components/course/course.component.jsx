@@ -23,7 +23,10 @@ const Course = () => (
 
       <CardGroupCont>
         <CardCont>
-          <CardImg src={Img1} />
+          <CardImg
+            src={Img1}
+            loading="lazy"
+          />
           <CardTextCont>
             <h2>Lorem Ipsum</h2>
             <p>
@@ -36,7 +39,10 @@ const Course = () => (
         </CardCont>
 
         <CardCont>
-          <CardImg src={Img2} />
+          <CardImg
+            src={Img2}
+            loading="lazy"
+          />
           <CardTextCont>
             <h2>Lorem Ipsum</h2>
             <p>
@@ -49,7 +55,10 @@ const Course = () => (
         </CardCont>
 
         <CardCont>
-          <CardImg src={Img3} />
+          <CardImg
+            src={Img3}
+            loading="lazy"
+          />
           <CardTextCont>
             <h2>Lorem Ipsum</h2>
             <p>

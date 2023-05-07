@@ -6,7 +6,10 @@ import {
 import Bgi from "../../assets/news-latter/newsLatter.svg";
 
 const NewsLatter = () => (
-  <NewsLatterCont bgi={Bgi}>
+  <NewsLatterCont
+    bgi={Bgi}
+    loading="lazy"
+  >
     <NewsLatterTextCont>
       <h2> Don't Miss Our Update </h2>
       <p>

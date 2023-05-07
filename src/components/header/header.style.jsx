@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderCont = styled.header`
+  background-color: rgb(136 252 255);
   background-image: url(${({ heroBgi }) => heroBgi});
   background-size: cover;
   background-repeat: no-repeat;
@@ -9,7 +10,6 @@ export const HeaderCont = styled.header`
 
 export const HeroTitleCont = styled.div`
   padding: clamp(4rem, 10vw, 8rem) 0;
-
   h1 {
     color: #4d80e4;
     font-size: clamp(2rem, 9vw, 4.375rem);

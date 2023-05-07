@@ -15,11 +15,15 @@ const App = () => {
       <GlobalStyle />
       <Header />
       <Course />
-      <Spotlight mainImg={Img1} />
+      <Spotlight
+        mainImg={Img1}
+        loading="lazy"
+      />
       <Statistics />
       <Spotlight
         bgi2={Bgi2}
         mainImg={Img2}
+        loading="lazy"
         flexDirection="reverse"
       />
       <Information />

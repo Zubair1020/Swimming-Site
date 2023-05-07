@@ -14,13 +14,18 @@ const Spotlight = ({ bgi2, mainImg, flexDirection }) => {
       <SpotlightCont
         flexDirection={flexDirection}
         bgi={bgi2 ? bgi2 : Bgi}
+        loading="lazy"
       >
         <ImgCont>
           <FloatImg
             src={FloatImage}
             flexDirection={flexDirection}
+            loading="lazy"
           />
-          <MainImg src={mainImg} />
+          <MainImg
+            src={mainImg}
+            loading="lazy"
+          />
         </ImgCont>
         <TextCont>
           <h2>Your Title Here</h2>
