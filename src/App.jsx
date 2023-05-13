@@ -1,34 +1,43 @@
-import Course from "./components/course/course.component";
-import Header from "./components/header/header.component";
-import Spotlight from "./components/spotlight/spotlight.component";
 import GlobalStyle from "./main.style";
-import Img1 from "./assets/spotlight/img1.svg";
-import Img2 from "./assets/spotlight/img2.svg";
-import Bgi2 from "./assets/spotlight/spotlightBg2.svg";
-import Statistics from "./components/statistics/statistics.component";
-import Information from "./components/information/information.component";
-import NewsLatter from "./components/news-latter/news-latter.component";
-import Footer from "./components/footer/footer.component";
+import { Route, Routes } from "react-router-dom";
+import About from "./components/routes/about/about.component";
+import Services from "./components/routes/services/services.component";
+import Products from "./components/routes/products/products.component";
+import Contact from "./components/routes/contact/contact.component";
+import Home from "./components/routes/home/home.component";
+import Navigation from "./components/routes/navigation/navigation.component";
+
 const App = () => {
   return (
     <>
       <GlobalStyle />
-      <Header />
-      <Course />
-      <Spotlight
-        mainImg={Img1}
-        loading="lazy"
-      />
-      <Statistics />
-      <Spotlight
-        bgi2={Bgi2}
-        mainImg={Img2}
-        loading="lazy"
-        flexDirection="reverse"
-      />
-      <Information />
-      <NewsLatter />
-      <Footer />
+      <Routes>
+        <Route
+          path="/"
+          element={<Navigation />}
+        >
+          <Route
+            index
+            element={<Home />}
+          />
+          <Route
+            path="about"
+            element={<About />}
+          />
+          <Route
+            path="services"
+            element={<Services />}
+          />
+          <Route
+            path="products"
+            element={<Products />}
+          />
+          <Route
+            path="contact"
+            element={<Contact />}
+          />
+        </Route>
+      </Routes>
     </>
   );
 };

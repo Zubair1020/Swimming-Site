@@ -6,11 +6,12 @@ import {
   NavigationCont,
 } from "./navigation.style";
 
-import NavigationLink from "../nav-link/nav-link.component";
-import Logo from "../../assets/header-images/logo.svg";
-import BurgerMenu from "../../assets/header-images/burger-menu.svg";
-import Cross from "../../assets/header-images/cross.svg";
+import NavigationLink from "../../nav-link/nav-link.component";
+import Logo from "../../../assets/header-images/logo.svg";
+import BurgerMenu from "../../../assets/header-images/burger-menu.svg";
+import Cross from "../../../assets/header-images/cross.svg";
 import { useEffect } from "react";
+import { Link, Outlet } from "react-router-dom";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,10 +29,12 @@ const Navigation = () => {
   return (
     <>
       <NavigationCont isScrolling={isScrolling}>
-        <NavLogo
-          src={Logo}
-          alt="Logo"
-        />
+        <Link to="/">
+          <NavLogo
+            src={Logo}
+            alt="Logo"
+          />
+        </Link>
         <MenuButton
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-controls="primary-navigation"
@@ -42,13 +45,15 @@ const Navigation = () => {
           id="primary-navigation"
           isMenuOpen={isMenuOpen}
         >
-          <NavigationLink href="about">Home</NavigationLink>
-          <NavigationLink>About</NavigationLink>
-          <NavigationLink>Services</NavigationLink>
-          <NavigationLink>Products</NavigationLink>
-          <NavigationLink>Contact</NavigationLink>
+          <NavigationLink to="/">Home</NavigationLink>
+          <NavigationLink to="/about">About</NavigationLink>
+          <NavigationLink to="/services">Services</NavigationLink>
+          <NavigationLink to="/products">Products</NavigationLink>
+          <NavigationLink to="/contact">Contact</NavigationLink>
         </NavLinksCont>
       </NavigationCont>
+
+      <Outlet />
     </>
   );
 };

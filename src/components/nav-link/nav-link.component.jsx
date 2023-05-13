@@ -1,8 +1,8 @@
-import { NavLi, NavLink } from "./nav-link.style";
+import { NavLi, StyledNavLink } from "./nav-link.style";
 
-const NavigationLink = ({ href, children }) => (
+const NavigationLink = ({ to, children }) => (
   <NavLi>
-    <NavLink href={href}>{children}</NavLink>
+    <StyledNavLink to={to}>{children}</StyledNavLink>
   </NavLi>
 );
 

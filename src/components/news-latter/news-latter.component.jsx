@@ -19,8 +19,8 @@ const NewsLatter = () => (
     </NewsLatterTextCont>
     <NewsLatterFrom>
       <input
-        type="email"
-        required
+        // type="email"
+        // required
         placeholder="Your Email"
       />
       <button type="submit">subscribe</button>

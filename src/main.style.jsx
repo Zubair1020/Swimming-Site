@@ -30,6 +30,11 @@ a {
 body{
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    background-color: #8BF5FA;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(45deg,#8BF5FA 15%, #42C2FF 50%);
+    background-size: 200%;
+
 }
 `;
 

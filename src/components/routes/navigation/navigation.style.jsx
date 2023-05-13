@@ -7,6 +7,7 @@ export const NavLogo = styled.img`
 export const NavigationCont = styled.div`
   position: fixed;
   inset: 0 0 auto 0;
+  z-index: 1000;
   background-image: linear-gradient(90deg, rgb(136 252 255), rgb(77, 128, 228));
   background-repeat: no-repeat;
   background-size: 0;
